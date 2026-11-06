@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="HabitTracker.csproj" />
+  <Project Path="HabitTrackerBusinessLogic/HabitTrackerBusinessLogic.csproj" Id="46e0a532-9049-409b-8826-bf87dc168a0b" />
+  <Project Path="HabitTrackerDataLogic/HabitTrackerDataLogic.csproj" Id="de160da0-1b90-47fd-bdc4-7bc75dcb3f35" />
 </Solution>

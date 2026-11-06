@@ -7,4 +7,22 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="HabitTrackerBusinessLogic\HabitTrackerBusinessLogic.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Habit.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+	<ItemGroup>
+		<Compile Remove="HabitTrackerBusinessLogic\**" />
+		<Compile Remove="HabitTrackerDataLogic\**" />
+		<EmbeddedResource Remove="HabitTrackerBusinessLogic\**" />
+		<EmbeddedResource Remove="HabitTrackerDataLogic\**" />
+		<None Remove="HabitTrackerBusinessLogic\**" />
+		<None Remove="HabitTrackerDataLogic\**" />
+	</ItemGroup>
+
 </Project>
